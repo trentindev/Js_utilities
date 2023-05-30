@@ -65,6 +65,15 @@ export const titleize = (title, lang = 'fr') => {
 export const toCamelCase = (str) => str.trim().replace(/[-_\s]+(.)?/g, (_, c) => (c ? c.toUpperCase() : ''));
 
 
+
+/**
+ * @description The function takes a string as input, splits it into an array of characters, reverses the order of
+ * the characters, and then joins them back together into a new string.
+ * @param str - The input string that needs to be reversed.
+ */
+export const reverseString = (str) => str.split('').reverse().join('');
+
+
 //////////////////////////////  Iterables   //////////////////////////////////////////////////////////
 
 /**
